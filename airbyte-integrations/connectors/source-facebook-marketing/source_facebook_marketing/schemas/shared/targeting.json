@@ -77,7 +77,7 @@
         "relationship_statuses": {
           "type": ["null", "array"],
           "items": {
-            "type": ["null", "integer"]
+            "type": ["null", "integer", "string"]
           }
         },
         "generation": {
@@ -102,7 +102,7 @@
     },
     "locales": {
       "items": {
-        "type": ["null", "integer"]
+        "type": ["null", "integer", "string"]
       },
       "type": ["null", "array"]
     },
@@ -138,7 +138,7 @@
     },
     "education_statuses": {
       "items": {
-        "type": ["null", "integer"]
+        "type": ["null", "integer", "string"]
       },
       "type": ["null", "array"]
     },
@@ -149,7 +149,7 @@
       "type": ["null", "array"]
     },
     "age_max": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "custom_audiences": {
       "$ref": "targeting.json#/definitions/id_name_pairs"
@@ -161,7 +161,7 @@
       "type": ["null", "array"]
     },
     "age_min": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "facebook_positions": {
       "items": {
@@ -205,7 +205,7 @@
     "genders": {
       "type": ["null", "array"],
       "items": {
-        "type": ["null", "integer"]
+        "type": ["null", "integer", "string"]
       }
     },
     "targeting_optimization": {
@@ -238,7 +238,7 @@
     "relationship_statuses": {
       "type": ["null", "array"],
       "items": {
-        "type": ["null", "integer"]
+        "type": ["null", "integer", "string"]
       }
     },
     "industries": {
@@ -259,7 +259,7 @@
     "interested_in": {
       "type": ["null", "array"],
       "items": {
-        "type": ["null", "integer"]
+        "type": ["null", "integer", "string"]
       }
     },
     "excluded_user_device": {

@@ -47,7 +47,7 @@
             "type": ["null", "string"]
           },
           "radius": {
-            "type": ["null", "integer"]
+            "type": ["null", "integer", "string"]
           }
         }
       },
@@ -74,10 +74,10 @@
             "type": ["null", "string"]
           },
           "primary_city_id": {
-            "type": ["null", "integer"]
+            "type": ["null", "integer", "string"]
           },
           "region_id": {
-            "type": ["null", "integer"]
+            "type": ["null", "integer", "string"]
           }
         }
       }
@@ -97,22 +97,22 @@
             "type": ["null", "string"]
           },
           "latitude": {
-            "type": ["null", "number"]
+            "type": ["null", "number", "string"]
           },
           "longitude": {
-            "type": ["null", "number"]
+            "type": ["null", "number", "string"]
           },
           "name": {
             "type": ["null", "string"]
           },
           "primary_city_id": {
-            "type": ["null", "integer"]
+            "type": ["null", "integer", "string"]
           },
           "radius": {
-            "type": ["null", "integer"]
+            "type": ["null", "integer", "string"]
           },
           "region_id": {
-            "type": ["null", "integer"]
+            "type": ["null", "integer", "string"]
           }
         }
       }

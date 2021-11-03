@@ -48,10 +48,10 @@
       "format": "date-time"
     },
     "daily_budget": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "budget_remaining": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "effective_status": {
       "type": ["null", "string"]
@@ -68,23 +68,23 @@
       "format": "date-time"
     },
     "lifetime_budget": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "targeting": { "$ref": "targeting.json" },
     "bid_info": {
       "type": ["null", "object"],
       "properties": {
         "CLICKS": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         },
         "ACTIONS": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         },
         "IMPRESSIONS": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         },
         "REACH": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         }
       }
     },

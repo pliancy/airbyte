@@ -36,25 +36,25 @@
       }
     },
     "bid_amount": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "bid_info": {
       "type": ["null", "object"],
       "properties": {
         "CLICKS": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         },
         "ACTIONS": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         },
         "REACH": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         },
         "IMPRESSIONS": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         },
         "SOCIAL": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         }
       }
     },

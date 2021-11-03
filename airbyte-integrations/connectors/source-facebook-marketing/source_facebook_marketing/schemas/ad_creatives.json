@@ -85,7 +85,7 @@
         "link_data": {
           "properties": {
             "additional_image_index": {
-              "type": ["null", "integer"]
+              "type": ["null", "integer", "string"]
             },
             "app_link_spec": {
               "type": ["null", "object"],
@@ -369,7 +369,7 @@
         "template_data": {
           "properties": {
             "additional_image_index": {
-              "type": ["null", "integer"]
+              "type": ["null", "integer", "string"]
             },
             "app_link_spec": {
               "type": ["null", "object"],
@@ -639,7 +639,7 @@
           "type": ["null", "object"],
           "properties": {
             "additional_image_index": {
-              "type": ["null", "integer"]
+              "type": ["null", "integer", "string"]
             },
             "branded_content_sponsor_page_id": {
               "type": ["null", "string"]

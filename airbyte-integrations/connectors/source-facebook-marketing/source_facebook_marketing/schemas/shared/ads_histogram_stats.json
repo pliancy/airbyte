@@ -9,7 +9,7 @@
       "value": {
         "type": ["null", "array"],
         "items": {
-          "type": ["null", "integer"]
+          "type": ["null", "integer", "string"]
         }
       }
     }

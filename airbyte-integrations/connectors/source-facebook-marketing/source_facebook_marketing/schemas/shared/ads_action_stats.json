@@ -4,22 +4,22 @@
     "type": ["null", "object"],
     "properties": {
       "1d_click": {
-        "type": ["null", "number"]
+        "type": ["null", "number", "string"]
       },
       "7d_click": {
-        "type": ["null", "number"]
+        "type": ["null", "number", "string"]
       },
       "28d_click": {
-        "type": ["null", "number"]
+        "type": ["null", "number", "string"]
       },
       "1d_view": {
-        "type": ["null", "number"]
+        "type": ["null", "number", "string"]
       },
       "7d_view": {
-        "type": ["null", "number"]
+        "type": ["null", "number", "string"]
       },
       "28d_view": {
-        "type": ["null", "number"]
+        "type": ["null", "number", "string"]
       },
       "action_destination": {
         "type": ["null", "string"]
@@ -31,7 +31,7 @@
         "type": ["null", "string"]
       },
       "value": {
-        "type": ["null", "number"]
+        "type": ["null", "number", "string"]
       }
     }
   }

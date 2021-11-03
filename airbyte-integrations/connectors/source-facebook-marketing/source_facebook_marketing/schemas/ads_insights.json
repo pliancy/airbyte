@@ -40,13 +40,13 @@
       "type": ["null", "string"]
     },
     "auction_bid": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "auction_competitiveness": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "auction_max_competitor_bid": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "buying_type": {
       "type": ["null", "string"]
@@ -58,10 +58,10 @@
       "type": ["null", "string"]
     },
     "canvas_avg_view_percent": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "canvas_avg_view_time": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "catalog_segment_actions": {
       "$ref": "ads_action_stats.json"
@@ -79,7 +79,7 @@
       "$ref": "ads_action_stats.json"
     },
     "clicks": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "conversion_rate_ranking": {
       "type": ["null", "string"]
@@ -112,13 +112,13 @@
       "$ref": "ads_action_stats.json"
     },
     "cost_per_estimated_ad_recallers": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "cost_per_inline_link_click": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "cost_per_inline_post_engagement": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "cost_per_outbound_click": {
       "$ref": "ads_action_stats.json"
@@ -130,29 +130,29 @@
       "$ref": "ads_action_stats.json"
     },
     "cost_per_unique_click": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "cost_per_unique_inline_link_click": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "cost_per_unique_outbound_click": {
       "$ref": "ads_action_stats.json"
     },
     "cpc": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "cpm": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "cpp": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "created_time": {
       "format": "date",
       "type": ["null", "string"]
     },
     "ctr": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "date_start": {
       "format": "date",
@@ -166,52 +166,52 @@
       "type": ["null", "string"]
     },
     "estimated_ad_recall_rate": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "estimated_ad_recall_rate_lower_bound": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "estimated_ad_recall_rate_upper_bound": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "estimated_ad_recallers": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "estimated_ad_recallers_lower_bound": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "estimated_ad_recallers_upper_bound": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "frequency": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "full_view_impressions": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "full_view_reach": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "gender_targeting": {
       "type": ["null", "string"]
     },
     "impressions": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "inline_link_click_ctr": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "inline_link_clicks": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "inline_post_engagement": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "instant_experience_clicks_to_open": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "instant_experience_clicks_to_start": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "instant_experience_outbound_clicks": {
       "$ref": "ads_action_stats.json"
@@ -241,37 +241,37 @@
       "$ref": "ads_action_stats.json"
     },
     "qualifying_question_qualify_answer_rate": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "quality_ranking": {
       "type": ["null", "string"]
     },
     "reach": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "social_spend": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "spend": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "unique_actions": {
       "$ref": "ads_action_stats.json"
     },
     "unique_clicks": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "unique_ctr": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "unique_inline_link_click_ctr": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "unique_inline_link_clicks": {
-      "type": ["null", "integer"]
+      "type": ["null", "integer", "string"]
     },
     "unique_link_clicks_ctr": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "unique_outbound_clicks": {
       "$ref": "ads_action_stats.json"
@@ -335,7 +335,7 @@
       "$ref": "ads_action_stats.json"
     },
     "wish_bid": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     }
   },
   "type": ["null", "object"]

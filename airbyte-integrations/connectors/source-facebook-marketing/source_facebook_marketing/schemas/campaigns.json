@@ -19,7 +19,7 @@
       "type": ["null", "string"]
     },
     "spend_cap": {
-      "type": ["null", "number"]
+      "type": ["null", "number", "string"]
     },
     "start_time": {
       "type": "string",
