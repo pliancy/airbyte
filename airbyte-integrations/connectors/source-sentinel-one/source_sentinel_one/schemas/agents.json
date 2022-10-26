@@ -1,0 +1,688 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "siteId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "storageName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "accountName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "allowRemoteShell": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "consoleMigrationStatus": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "lastIpToMgmt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "encryptedApplications": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "isPendingUninstall": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "isUpToDate": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "domain": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "computerName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scanStartedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "activeThreats": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "modelName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "remoteProfilingState": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentVersion": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "groupIp": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "inRemoteShellSession": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scanFinishedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "cpuCount": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "rangerVersion": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "coreCount": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "isDecommissioned": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "osRevision": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "operationalStateExpiration": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "isActive": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "storageType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "installerType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "groupUpdatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "isUninstalled": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "detectionState": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "totalMemory": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "appsVulnerabilityStatus": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "firstFullModeTime": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "groupId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scanStatus": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "osType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "accountId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "mitigationMode": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "cloudProviders": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "osArch": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "cpuId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "tags": {
+            "type": [
+                "object"
+            ],
+            "properties": {
+                "sentinelone": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "assignedById": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "assignedAt": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "assignedBy": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "key": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "id": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "osUsername": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "remoteProfilingStateExpiration": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "operationalState": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "machineType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "threatRebootRequired": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "externalId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "licenseKey": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "externalIp": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "locations": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "scope": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "infected": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "rangerStatus": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "serialNumber": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "createdAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "locationType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "uuid": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "networkQuarantineEnabled": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "osStartTime": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "lastLoggedInUserName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "groupName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "mitigationModeSuspicious": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "policyUpdatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "lastActiveDate": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "siteName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scanAbortedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "networkStatus": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "registeredAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "osName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "firewallEnabled": {
+            "type": [
+                "b",
+                "null"
+            ]
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "locationEnabled": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "userActionsNeeded": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "example": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "enum": {
+                        "type": [
+                            "array",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "networkInterfaces": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "physical": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "gatewayIp": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "gatewayMacAddress": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "inet6": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "inet": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "activeDirectory": {
+            "type": "object",
+            "properties": {
+                "lastUserDistinguishedName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "computerDistinguishedName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "userPrincipalName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "mail": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "computerMemberOf": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "lastUserMemberOf": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

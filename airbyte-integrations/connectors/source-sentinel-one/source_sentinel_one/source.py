@@ -75,6 +75,14 @@ class Accounts(SentinelOneStream):
         url = self.your_management_url
         return f'{url}/web/api/v2.1/accounts'
 
+class Agents(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/agents'
 # Source
 class SourceSentinelOne(AbstractSource):
     def check_connection(self, logger, config) -> Tuple[bool, any]:
@@ -93,5 +101,6 @@ class SourceSentinelOne(AbstractSource):
         args = {"api_token": config["api_token"],
                 "your_management_url": config["your_management_url"]}
         return [Activities(**args),
-                Accounts(**args)]
+                Accounts(**args),
+                Agents(**args)]
         
