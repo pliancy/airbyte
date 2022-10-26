@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type":["string","null"]
+    },
+    "accountName": {
+      "type":["string","null"]
+    },
+    "activityType": {
+      "type":["integer","null"]
+    },
+    "activityUuid": {
+      "type":["string","null"]
+    },
+    "agentId": {
+      "type":["string","null"]
+    },
+    "agentUpdatedVersion": {
+      "type":["string","null"]
+    },
+    "comments": {
+      "type":["string","null"]
+    },
+    "createdAt": {
+      "type":["string","null"]
+    },
+    "data": {
+      "type":"object",
+      "properties": {
+        "accountId": {
+          "type":["integer","null"]
+        },
+        "accountName": {
+          "type":["string","null"]
+        },
+        "fullScopeDetails": {
+          "type":["string","null"]
+        },
+        "fullScopeDetailsPath":{
+          "type":["string","null"]
+        },
+        "groupName":{
+          "type":["string","null"]
+        },
+        "scopeLevel": {
+          "type":["string","null"]
+        },
+        "scopeName": {
+          "type":["string","null"]
+        },
+        "siteName": {
+          "type":["string","null"]
+        },
+        "username": {
+          "type":["string","null"]
+        }
+      }
+    } ,
+    "description": {
+      "type":["string","null"]
+    },
+    "groupId": {
+      "type":["string","null"]
+    },
+    "groupName": {
+      "type":["string","null"]
+    },
+    "hash": {
+      "type":["string","null"]
+    },
+    "id": {
+      "type":["string","null"]
+    },
+    "osFamily":{
+      "type":["string","null"]
+    },
+    "primaryDescription": {
+      "type":["string","null"]
+    },
+    "secondaryDescription": {
+      "type":["string","null"]
+    },
+    "siteId":{
+      "type":["string","null"]
+    },
+    "siteName": {
+      "type":["string","null"]
+    },
+    "threatId": {
+      "type":["string","null"]
+    },
+    "updatedAt": {
+      "type":["string","null"]
+    },
+    "userId": {
+      "type":["string","null"]
+    }
+  }
+}

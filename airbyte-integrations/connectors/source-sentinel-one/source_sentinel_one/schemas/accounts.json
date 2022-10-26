@@ -1,0 +1,334 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "accountType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "activeAgents": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "agentsInCompleteSku": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "agentsInControlSku": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "agentsInCoreSku": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "billingMode": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "completeSites": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "controlSites": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "coreSites": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "createdAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creator": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creatorId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "expiration": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "externalId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "isDefault": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "licenses": {
+            "type": "object",
+            "properties": {
+                "bundles": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "displayName": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "majorVersion": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "minorVersion": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "name": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "totalSurfaces": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "modules": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "displayName": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "majorVersion": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "name": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "settings": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "displayName": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "groupName": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "setting": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "settingGroup": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "settingGroupDisplayName": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "state": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "totalComplete": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "totalControl": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "totalCore": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "totalLicenses": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "unlimitedComplete": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "unlimitedControl": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "unlimitedCore": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "unlimitedExpiration": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "usageType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "numberOfSites": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "skus": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "agentsInSku": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "totalLicenses": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "unlimited": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

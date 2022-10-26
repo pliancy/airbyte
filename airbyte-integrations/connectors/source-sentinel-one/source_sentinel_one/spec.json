@@ -1,0 +1,25 @@
+{
+  "documentationUrl": "https://docsurl.com",
+  "connectionSpecification": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Sentinel One Integration Spec",
+    "type": "object",
+    "required": [
+      "api_token",
+      "your_management_url"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "api_token": {
+        "title": "API TOKEN",
+        "type": "string",
+        "description": "Generate API-TOKEN from your Sentinel One account."
+      },
+      "your_management_url": {
+        "title": "Management URL",
+        "type": "string",
+        "description": "Your Accounts URL www.example.com/net"
+      }
+    }
+  }
+}
