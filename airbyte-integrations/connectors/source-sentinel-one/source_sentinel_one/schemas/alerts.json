@@ -1,0 +1,706 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "targetProcessInfo": {
+            "type": "object",
+            "properties": {
+                "tgtFileCreatedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtFileIsSigned": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtFileOldPath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcImagePath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcSignedStatus": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtFileHashSha256": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcStorylineId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcPid": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcCmdLine": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtFileModifiedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtFileId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcIntegrityLevel": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtFileHashSha1": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcUid": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtProcessStartTime": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tgtFilePath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "alertInfo": {
+            "type": "object",
+            "properties": {
+                "createdAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "srcIp": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "incidentStatus": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "registryOldValue": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "alertId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dstPort": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "indicatorName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "registryPath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loginType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dstIp": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "updatedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "indicatorDescription": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loginsUserName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loginIsSuccessful": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "indicatorCategory": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "modulePath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loginAccountSid": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dnsResponse": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "netEventDirection": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "registryValue": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "srcMachineIp": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "registryOldValueType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "eventType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "analystVerdict": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dvEventId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dnsRequest": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loginIsAdministratorEquivalent": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loginAccountDomain": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tiIndicatorType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "moduleSha1": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "source": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "srcPort": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tiIndicatorValue": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tiIndicatorSource": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "reportedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "registryKeyPath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tiIndicatorComparisonMethod": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "hitType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "sourceProcessInfo": {
+            "type": "object",
+            "properties": {
+                "integrityLevel": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "pid": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileHashMd5": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "filePath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileSignerIdentity": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "pidStarttime": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "storyline": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileHashSha1": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "uniqueId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "user": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "commandline": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileHashSha256": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "subsystem": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "ruleInfo": {
+            "type": "object",
+            "properties": {
+                "severity": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "treatAsThreat": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "scopeLevel": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "sourceParentProcessInfo": {
+            "type": "object",
+            "properties": {
+                "integrityLevel": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "pid": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileHashMd5": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "filePath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileSignerIdentity": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "pidStarttime": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "storyline": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileHashSha1": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "uniqueId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "user": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "commandline": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileHashSha256": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "subsystem": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "agentDetectionInfo": {
+            "type": "object",
+            "properties": {
+                "osFamily": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "uuid": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "osName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "siteId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "machineType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "osRevision": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "kubernetesInfo": {
+            "type": "object",
+            "properties": {
+                "controllerName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "node": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "namespace": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "namespaceLabels": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "pod": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "controllerLabels": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "controllerKind": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "cluster": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "podLabels": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "containerInfo": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "image": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "labels": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -83,6 +83,46 @@ class Agents(SentinelOneStream):
     ) -> str:
         url = self.your_management_url
         return f'{url}/web/api/v2.1/agents'
+
+#Alerts
+class Alerts(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/cloud-detection/alerts'
+
+#Applications Risk
+class Installed_applications(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/installed-applications'
+
+class Installed_applications_cves(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/installed-applications/cves'
+
+
+class Config_override(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/config-override'
+
 # Source
 class SourceSentinelOne(AbstractSource):
     def check_connection(self, logger, config) -> Tuple[bool, any]:
@@ -102,5 +142,9 @@ class SourceSentinelOne(AbstractSource):
                 "your_management_url": config["your_management_url"]}
         return [Activities(**args),
                 Accounts(**args),
-                Agents(**args)]
+                Agents(**args),
+                Config_override(**args),
+                Installed_applications(**args),
+                Installed_applications_cves(**args),
+                Alerts(**args)]
         

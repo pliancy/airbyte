@@ -1,0 +1,150 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "publisher": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "createdAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "size": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "agentUuid": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "riskLevel": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "type": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentIsActive": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "osType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentDomain": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentInfected": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "agentOsType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentMachineType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentIsDecommissioned": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "agentOperationalState": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "signed": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "agentVersion": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentComputerName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "installedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "version": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentNetworkStatus": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    }
+}
