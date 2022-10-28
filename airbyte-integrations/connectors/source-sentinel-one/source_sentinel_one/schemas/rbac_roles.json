@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "scopeId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "updatedById": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "usersInRoles": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "siteName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creatorId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "predefinedRole": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creator": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "createdAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "updatedBy": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scope": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "accountName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    }
+}

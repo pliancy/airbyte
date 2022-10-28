@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "filterId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "isDefault": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "registrationToken": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "siteId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creatorId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "rank": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creator": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "filterName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "createdAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "inherits": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "type": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "totalAgents": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    }
+}

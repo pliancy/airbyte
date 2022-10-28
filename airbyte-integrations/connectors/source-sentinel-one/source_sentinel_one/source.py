@@ -84,7 +84,7 @@ class Agents(SentinelOneStream):
         url = self.your_management_url
         return f'{url}/web/api/v2.1/agents'
 
-#Alerts
+
 class Alerts(SentinelOneStream):
     primary_key = None
 
@@ -94,7 +94,6 @@ class Alerts(SentinelOneStream):
         url = self.your_management_url
         return f'{url}/web/api/v2.1/cloud-detection/alerts'
 
-#Applications Risk
 class Installed_applications(SentinelOneStream):
     primary_key = None
 
@@ -123,6 +122,159 @@ class Config_override(SentinelOneStream):
         url = self.your_management_url
         return f'{url}/web/api/v2.1/config-override'
 
+class Cloud_detection_rules(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/cloud-detection/rules'
+
+
+class Blacklist(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/restrictions'
+
+
+class Exclusions(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/exclusions'
+
+
+class Filters(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/filters'
+
+# class Firewall_control_configuration(SentinelOneStream):
+#     primary_key = None
+
+#     def path(
+#         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+#     ) -> str:
+#         url = self.your_management_url
+#         return f'{url}/web/api/v2.1/firewall-control/configuration'
+
+class Firewall_control(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/firewall-control'
+
+class Firewall_control_protocols(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/firewall-control/protocols'
+
+
+class Groups(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/groups'
+
+
+class Locations(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/locations'
+
+class Applications_catalog(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/singularity-marketplace/applications-catalog'
+
+class Marketplace_installed_applications(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/singularity-marketplace/applications'
+
+
+# class Policy(SentinelOneStream):
+#     primary_key = None
+
+#     def path(
+#         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+#     ) -> str:
+#         url = self.your_management_url
+#         return f'{url}/web/api/v2.1/tenant/policy'
+ 
+
+class Rbac_roles(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/rbac/roles'
+
+class Reports(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/reports'
+
+class Report_tasks(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/report-tasks'
+
+# class Rogue_settings(SentinelOneStream):
+#     primary_key = None
+
+#     def path(
+#         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+#     ) -> str:
+#         url = self.your_management_url
+#         return f'{url}/web/api/v2.1/rogues/settings'
+
+
+        
 # Source
 class SourceSentinelOne(AbstractSource):
     def check_connection(self, logger, config) -> Tuple[bool, any]:
@@ -140,11 +292,26 @@ class SourceSentinelOne(AbstractSource):
     def streams(self, config: Mapping[str, Any]) -> List[Stream]:
         args = {"api_token": config["api_token"],
                 "your_management_url": config["your_management_url"]}
+
         return [Activities(**args),
                 Accounts(**args),
                 Agents(**args),
                 Config_override(**args),
                 Installed_applications(**args),
                 Installed_applications_cves(**args),
-                Alerts(**args)]
+                Alerts(**args),
+                Cloud_detection_rules(**args),
+                Blacklist(**args),
+                Exclusions(**args),
+                Filters(**args),
+                Firewall_control(**args),
+                Firewall_control_protocols(**args),
+                Groups(**args),
+                Locations(**args),
+                Applications_catalog(**args),
+                Marketplace_installed_applications(**args),
+                Rbac_roles(**args),
+                Reports(**args),
+                Report_tasks(**args)
+                ]
         

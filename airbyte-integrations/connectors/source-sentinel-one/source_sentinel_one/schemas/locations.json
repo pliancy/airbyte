@@ -1,0 +1,291 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "creatorId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "operator": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "editable": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "createdAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scope": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creator": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "updaterId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "activeFirewallRules": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "serverConnectivity": {
+            "type": "object",
+            "properties": {
+                "values": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "enabled": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "isFallback": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "dnsServers": {
+            "type": "object",
+            "properties": {
+                "identifiers": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "values": {
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "operator": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "networkInterfaces": {
+            "type": [
+                "object"
+            ],
+            "properties": {
+                "value": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "enabled": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "scopeId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "registryKeys": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "key": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "data": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "scopeName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "dnsLookup": {
+            "type": "object",
+            "properties": {
+                "identifiers": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "host": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "ip": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "operator": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "reportingAgents": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "updater": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "ipAddresses": {
+            "type": "object",
+            "properties": {
+                "identifiers": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "values": {
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "operator": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    }
+}

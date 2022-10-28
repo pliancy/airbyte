@@ -3,99 +3,189 @@
   "type": "object",
   "properties": {
     "accountId": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "accountName": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "activityType": {
-      "type":["integer","null"]
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "activityUuid": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "agentId": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "agentUpdatedVersion": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "comments": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "createdAt": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "data": {
-      "type":"object",
+      "type": "object",
       "properties": {
         "accountId": {
-          "type":["integer","null"]
+          "type": [
+            "integer",
+            "null"
+          ]
         },
         "accountName": {
-          "type":["string","null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "fullScopeDetails": {
-          "type":["string","null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
-        "fullScopeDetailsPath":{
-          "type":["string","null"]
+        "fullScopeDetailsPath": {
+          "type": [
+            "string",
+            "null"
+          ]
         },
-        "groupName":{
-          "type":["string","null"]
+        "groupName": {
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "scopeLevel": {
-          "type":["string","null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "scopeName": {
-          "type":["string","null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "siteName": {
-          "type":["string","null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "username": {
-          "type":["string","null"]
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
-    } ,
+    },
     "description": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "groupId": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "groupName": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "hash": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "id": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
-    "osFamily":{
-      "type":["string","null"]
+    "osFamily": {
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "primaryDescription": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "secondaryDescription": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
-    "siteId":{
-      "type":["string","null"]
+    "siteId": {
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "siteName": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "threatId": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "updatedAt": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "userId": {
-      "type":["string","null"]
+      "type": [
+        "string",
+        "null"
+      ]
     }
   }
 }

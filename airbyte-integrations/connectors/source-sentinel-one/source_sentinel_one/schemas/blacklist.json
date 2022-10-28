@@ -1,0 +1,194 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "scopeName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "notRecommended": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "includeChildren": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "osType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "userId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "source": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "value": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "createdAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "userName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "type": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scope": {
+            "type": "object",
+            "properties": {
+                "accountIds": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "minimum": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "example": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "siteIds": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "minimum": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "example": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "groupIds": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "minimum": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "example": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "tenant": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "includeParents": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "scopePath": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    }
+}

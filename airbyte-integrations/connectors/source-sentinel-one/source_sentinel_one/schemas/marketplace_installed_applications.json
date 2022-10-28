@@ -1,0 +1,173 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "applicationCatalogId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "hasAlert": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "scopes": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "accountId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "lastEntityCreatedAt": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "alertMessage": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "scopeLevel": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "creatorId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "siteId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "desiredStatus": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "scopeId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "creator": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "site": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "modifier": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "status": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "groupId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "group": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "modifierId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "hasAlert": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "account": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "retryUntil": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "createdAt": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "updatedAt": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "icon": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "lastInstalledAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    }
+}

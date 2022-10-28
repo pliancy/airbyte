@@ -1,0 +1,918 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "iocAttributes": {
+            "type": "object",
+            "properties": {
+                "smartFileMonitoring": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "file": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "dns": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "namedPipe": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "login": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "crossProcess": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "process": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "registry": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "ip": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "behavioralIndicators": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "dataMasking": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "fds": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "dllModuleLoad": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "autoInstallBrowserExtensions": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "scheduledTask": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "namedPipeExtended": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "commandScripts": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "autoFileUpload": {
+            "type": "object",
+            "properties": {
+                "maxFileSizeLimit": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "includeBenignFiles": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "maxDailyFileUploadLimit": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "enabled": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "maxLocalDiskUsage": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxDailyFileUpload": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxFileSize": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxLocalDiskUsageLimit": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "userFullName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "isDvPolicyPerEventType": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "snapshotsOn": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "cloudValidationOn": {
+            "type": "object",
+            "properties": {
+                "default": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "createdAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "engines": {
+            "type": "object",
+            "properties": {
+                "exploits": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "preExecutionSuspicious": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "pup": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "penetration": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "executables": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "applicationControl": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "reputation": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "lateralMovement": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "remoteShell": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dataFiles": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "preExecution": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "agentUi": {
+            "type": "object",
+            "properties": {
+                "showSupport": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "showQuarantineTab": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "maxEventAgeDays": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "contactFreeText": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contactPhoneNumber": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contactSupportWebsite": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "threatPopUpNotifications": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "contactOther": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contactDirectMessage": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "showAgentWarnings": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "devicePopUpNotifications": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "agentUiOn": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "contactCompany": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contactEmail": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "showDeviceTab": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "showSuspicious": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "autoMitigationAction": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "iocSupported": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "networkQuarantineOn": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "allowRemoteShell": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "mitigationModeSuspicious": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "userId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "researchOn": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "inheritedFrom": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "autoImmuneOn": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "monitorOnWrite": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "fwForNetworkQuarantineEnabled": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "isDefault": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "remoteScriptOrchestration": {
+            "type": "object",
+            "properties": {
+                "maxDailyFileDownloadLimit": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxFileSizeLimit": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxDailyFileDownload": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxLocalPackageDiskUsageLimit": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "alwaysUploadStreamToCloud": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "maxLocalPackageDiskUsage": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxDailyFileUploadLimit": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxDailyFileUpload": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maxFileSize": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "dvAttributesPerEventType": {
+            "type": "object",
+            "properties": {
+                "smartFileMonitoring": {
+                    "type": "object",
+                    "properties": {
+                        "smartFileMonitoring": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "file": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeFileModification": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeFileCreation": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeFileDeletion": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "fullDiskScan": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeFileRename": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "dns": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeDns": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "namedPipe": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeNamedPipeConnection": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeNamedPipeCreation": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "login": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeLoginLoggedOut": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeLoginLoggedIn": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "crossProcess": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeCrossProcessDuplicateThread": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeCrossProcessDuplicateProcess": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeCrossProcessRemoteThread": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeCrossProcessOpenProcess": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "process": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeProcessModification": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeProcessExit": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeProcessCreation": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "registry": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeRegistryKeyRename": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeRegistryValueDeleted": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeRegistryKeyExport": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeRegistryKeyImport": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeRegistryValueModified": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeRegistryKeySecurityChanged": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeRegistryValueCreated": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeRegistryKeyCreated": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeRegistryKeyDelete": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "ip": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeIpListen": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeIpConnect": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "behavioralIndicators": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeBehavioralIndicators": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "dataMasking": {
+                    "type": "object",
+                    "properties": {
+                        "dataMasking": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "url": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeUrl": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "dllModuleLoad": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeDllModuleLoad": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "autoInstallBrowserExtensions": {
+                    "type": "object",
+                    "properties": {
+                        "autoInstallBrowserExtensions": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "scheduledTask": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeScheduledTaskRegister": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeScheduledTaskUpdate": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeScheduledTaskStart": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeScheduledTaskTrigger": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "dvEventTypeScheduledTaskDelete": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "namedPipeExtended": {
+                    "type": "object",
+                    "properties": {
+                        "namedPipeExtended": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "commandScripts": {
+                    "type": "object",
+                    "properties": {
+                        "dvEventTypeCommandScripts": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "monitorOnExecute": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "autoDecommissionOn": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "antiTamperingOn": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "autoDecommissionDays": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "mitigationMode": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agentNotification": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "ioc": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "agentLoggingOn": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "agentUiOn": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scanNewAgents": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        }
+    }
+}
