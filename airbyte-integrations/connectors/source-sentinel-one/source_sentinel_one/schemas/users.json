@@ -1,0 +1,288 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "fullNameReadOnly": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "groupsReadOnly": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "twoFaEnabled": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "scope": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "lastLogin": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "allowRemoteShell": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "emailVerified": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "email": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "emailReadOnly": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "twoFaEnabledReadOnly": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "dateJoined": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agreementUrl": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "fullName": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "primaryTwoFaMethod": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "twoFaConfigured": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "firstLogin": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "agreedEula": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "isSystem": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "source": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "apiToken": {
+            "type": "object",
+            "properties": {
+                "expiresAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "createdAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "canGenerateApiToken": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "lowestRole": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "tenantRoles": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "readOnly": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "scopeRoles": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "roleId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "roleName": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "accountName": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "roles": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "siteRoles": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "roleId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "roleName": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "accountName": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "roles": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,252 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "scope": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "batchId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "pattern": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creator": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "creationTime": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "validUntil": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "method": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "mitreTactic": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "updatedAt": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "source": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "category": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "x-nullable": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "description": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "uploadTime": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "metadata": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "threatActors": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "intrusionSets": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "type": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "externalId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "value": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "uuid": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "patternType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "reference": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "x-nullable": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "description": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "scopeId": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "minimum": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "example": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

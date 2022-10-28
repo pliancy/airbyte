@@ -1,0 +1,1131 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "whiteningOptions": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "kubernetesInfo": {
+            "type": "object",
+            "properties": {
+                "pod": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "controllerKind": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "cluster": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "controllerLabels": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "controllerName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "namespace": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "namespaceLabels": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "podLabelspodLabels": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "node": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "containerInfo": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "image": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "labels": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "mitigationStatus": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "groupNotFound": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "latestReport": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "action": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "lastUpdate": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "mitigationStartedAt": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "mitigationEndedAt": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "status": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "agentSupportsReport": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "actionsCounters": {
+                        "type": "object",
+                        "properties": {
+                            "total": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "pendingReboot": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "failed": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "success": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "notFound": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "agentDetectionInfo": {
+            "type": "object",
+            "properties": {
+                "agentUuid": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "accountName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "groupName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "siteId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "externalIp": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "accountId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentOsName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentDetectionState": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentLastLoggedInUserName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentMitigationMode": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentVersion": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentIpV4": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentLastLoggedInUpn": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "siteName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentOsRevision": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentRegisteredAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentIpV6": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentDomain": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "groupId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "cloudProviders": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentLastLoggedInUserMail": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "indicators": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tactics": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "source": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "name": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "techniques": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "link": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "category": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "categoryId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "description": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "ids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "format": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "agentRealtimeInfo": {
+            "type": "object",
+            "properties": {
+                "siteId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "storageName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "scanFinishedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "accountName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentUuid": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentDecommissionedAt": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "agentIsDecommissioned": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "operationalState": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "groupName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentOsRevision": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentIsActive": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "storageType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentMachineType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "groupId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "scanStatus": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentDomain": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "siteName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentComputerName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "scanAbortedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentOsType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentNetworkStatus": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentInfected": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "scanStartedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "accountId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "activeThreats": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rebootRequired": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentMitigationMode": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentOsName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "agentVersion": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "userActionsNeeded": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "example": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "enum": {
+                                "type": [
+                                    "array",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "networkInterfaces": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "physical": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "id": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "inet6": {
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "inet": {
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "threatInfo": {
+            "type": "object",
+            "properties": {
+                "collectionId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "mitigatedPreemptively": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "externalTicketExists": {
+                    "type": "object",
+                    "properties": {
+                        "readOnly": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "sha1": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "mitigationStatus": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "reachedEventsLimit": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "browserType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "createdAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "processUser": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "initiatingUsername": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "isValidCertificate": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "mitigationStatusDescription": {
+                    "type": "object",
+                    "properties": {
+                        "readOnly": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "initiatedByDescription": {
+                    "type": "object",
+                    "properties": {
+                        "readOnly": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "threatName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "publisherName": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "automaticallyResolved": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "isFileless": {
+                    "type": "object",
+                    "properties": {
+                        "readOnly": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "analystVerdictDescription": {
+                    "type": "object",
+                    "properties": {
+                        "readOnly": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "fileSize": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "maliciousProcessArguments": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "analystVerdict": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "incidentStatus": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "cloudFilesHashVerdict": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "originatorProcess": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "failedActions": {
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "initiatingUserId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "filePath": {
+                    "type": "object",
+                    "properties": {
+                        "readOnly": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "md5": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "sha256": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "classification": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "incidentStatusDescription": {
+                    "type": "object",
+                    "properties": {
+                        "readOnly": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ]
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "externalTicketId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "updatedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "storyline": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "identifiedAt": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rebootRequired": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileExtension": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "certificateId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileVerificationType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "pendingActions": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "confidenceLevel": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "detectionType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "initiatedBy": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fileExtensionType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "threatId": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "classificationSource": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "detectionEngines": {
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "engines": {
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            }
+        }
+    }
+}

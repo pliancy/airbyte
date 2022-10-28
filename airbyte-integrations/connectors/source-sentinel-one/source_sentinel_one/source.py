@@ -281,7 +281,53 @@ class Rogue_table(SentinelOneStream):
     ) -> str:
         url = self.your_management_url
         return f'{url}/web/api/v2.1/rogues/table-view'
-        
+
+class Service_users(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/service-users'
+
+# class Sites(SentinelOneStream):
+#     primary_key = None
+
+#     def path(
+#         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+#     ) -> str:
+#         url = self.your_management_url
+#         return f'{url}/web/api/v2.1/sites'
+
+
+class Threat_intelligence(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/threat-intelligence/iocs'
+
+class Threats(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/threats'
+
+class Users(SentinelOneStream):
+    primary_key = None
+
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/users'
+
 # Source
 class SourceSentinelOne(AbstractSource):
     def check_connection(self, logger, config) -> Tuple[bool, any]:
@@ -320,6 +366,10 @@ class SourceSentinelOne(AbstractSource):
                 Rbac_roles(**args),
                 Reports(**args),
                 Report_tasks(**args),
-                Rogue_table(**args)
+                Rogue_table(**args),
+                Service_users(**args),
+                Threat_intelligence(**args),
+                Threats(**args),
+                Users(**args)
                 ]
         
