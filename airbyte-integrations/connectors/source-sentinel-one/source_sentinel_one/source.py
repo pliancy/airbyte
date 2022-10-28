@@ -273,7 +273,14 @@ class Report_tasks(SentinelOneStream):
 #         url = self.your_management_url
 #         return f'{url}/web/api/v2.1/rogues/settings'
 
+class Rogue_table(SentinelOneStream):
+    primary_key = None
 
+    def path(
+        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+    ) -> str:
+        url = self.your_management_url
+        return f'{url}/web/api/v2.1/rogues/table-view'
         
 # Source
 class SourceSentinelOne(AbstractSource):
@@ -312,6 +319,7 @@ class SourceSentinelOne(AbstractSource):
                 Marketplace_installed_applications(**args),
                 Rbac_roles(**args),
                 Reports(**args),
-                Report_tasks(**args)
+                Report_tasks(**args),
+                Rogue_table(**args)
                 ]
         
