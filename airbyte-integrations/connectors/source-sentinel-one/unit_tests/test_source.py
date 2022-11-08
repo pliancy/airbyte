@@ -4,19 +4,29 @@
 
 from unittest.mock import MagicMock
 
+from pytest import fixture
 from source_sentinel_one.source import SourceSentinelOne
 
+@fixture()
+def config(request):
+    args = {
+            "api_token": "Xoiwx",
+            "your_management_url": "//example.sentinelone.net"
+        }
+    return args
 
-def test_check_connection(mocker):
+def test_check_connection(mocker, config):
     source = SourceSentinelOne()
-    logger_mock, config_mock = MagicMock(), MagicMock()
-    assert source.check_connection(logger_mock, config_mock) == (True, None)
+    logger_mock = MagicMock()
+    (connection_status, error) = source.check_connection(logger_mock, config)
+    expected_status = False
+    assert connection_status == expected_status
 
 
-def test_streams(mocker):
+def test_streams(mocker, config):
     source = SourceSentinelOne()
-    config_mock = MagicMock()
-    streams = source.streams(config_mock)
+    streams = source.streams(config)
+
     # TODO: replace this with your streams number
-    expected_streams_number = 2
+    expected_streams_number = 25
     assert len(streams) == expected_streams_number
