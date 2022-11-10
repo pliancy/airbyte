@@ -63,7 +63,10 @@
             ]
         },
         "serverConnectivity": {
-            "type": "object",
+            "type": [
+                "object",
+                "null"
+            ],
             "properties": {
                 "values": {
                     "type": [
@@ -92,7 +95,10 @@
             ]
         },
         "dnsServers": {
-            "type": "object",
+            "type": [
+                "object",
+                "null"
+            ],
             "properties": {
                 "identifiers": {
                     "type": [
@@ -138,7 +144,8 @@
         },
         "networkInterfaces": {
             "type": [
-                "object"
+                "object",
+                "null"
             ],
             "properties": {
                 "value": {
@@ -162,7 +169,10 @@
             ]
         },
         "registryKeys": {
-            "type": "object",
+            "type": [
+                "object",
+                "null"
+            ],
             "properties": {
                 "value": {
                     "type": [
@@ -191,7 +201,10 @@
             ]
         },
         "dnsLookup": {
-            "type": "object",
+            "type": [
+                "object",
+                "null"
+            ],
             "properties": {
                 "identifiers": {
                     "type": [
@@ -237,7 +250,10 @@
             ]
         },
         "ipAddresses": {
-            "type": "object",
+            "type": [
+                "object",
+                "null"
+            ],
             "properties": {
                 "identifiers": {
                     "type": [

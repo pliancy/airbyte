@@ -58,8 +58,6 @@ End point Name - `Category` <br>
 18. Rbac_roles
 19. Reports - `Reports` 
 20. Report_tasks - `Reports` 
-21. Rogue_table - `Rogues`
-22. Service_users
-23. Threat_intelligence
-24. Threats
-25. Users
+21. Service_users
+22. Threats
+23. Users

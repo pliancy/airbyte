@@ -8,15 +8,10 @@
                 "null"
             ],
             "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    }
-                }
+                "type": [
+                    "string",
+                    "null"
+                ]
             }
         },
         "kubernetesInfo": {
@@ -208,7 +203,10 @@
                         ]
                     },
                     "actionsCounters": {
-                        "type": "object",
+                        "type": [
+                            "object",
+                            "null"
+                        ],
                         "properties": {
                             "total": {
                                 "type": [
@@ -364,7 +362,7 @@
                 },
                 "cloudProviders": {
                     "type": [
-                        "string",
+                        "object",
                         "null"
                     ]
                 },
@@ -635,13 +633,13 @@
                 },
                 "activeThreats": {
                     "type": [
-                        "string",
+                        "integer",
                         "null"
                     ]
                 },
                 "rebootRequired": {
                     "type": [
-                        "string",
+                        "boolean",
                         "null"
                     ]
                 },
@@ -669,27 +667,10 @@
                         "null"
                     ],
                     "items": {
-                        "type": "object",
-                        "properties": {
-                            "type": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "example": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ]
-                            },
-                            "enum": {
-                                "type": [
-                                    "array",
-                                    "null"
-                                ]
-                            }
-                        }
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 },
                 "networkInterfaces": {
@@ -724,15 +705,10 @@
                                     "null"
                                 ],
                                 "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "type": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        }
-                                    }
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             },
                             "inet": {
@@ -741,15 +717,10 @@
                                     "null"
                                 ],
                                 "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "type": {
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        }
-                                    }
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         }
@@ -773,21 +744,10 @@
                     ]
                 },
                 "externalTicketExists": {
-                    "type": "object",
-                    "properties": {
-                        "readOnly": {
-                            "type": [
-                                "boolean",
-                                "null"
-                            ]
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    }
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
                 },
                 "sha1": {
                     "type": [
@@ -838,38 +798,16 @@
                     ]
                 },
                 "mitigationStatusDescription": {
-                    "type": "object",
-                    "properties": {
-                        "readOnly": {
-                            "type": [
-                                "boolean",
-                                "null"
-                            ]
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    }
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "initiatedByDescription": {
-                    "type": "object",
-                    "properties": {
-                        "readOnly": {
-                            "type": [
-                                "boolean",
-                                "null"
-                            ]
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    }
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "threatName": {
                     "type": [
@@ -890,38 +828,16 @@
                     ]
                 },
                 "isFileless": {
-                    "type": "object",
-                    "properties": {
-                        "readOnly": {
-                            "type": [
-                                "boolean",
-                                "null"
-                            ]
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    }
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
                 },
                 "analystVerdictDescription": {
-                    "type": "object",
-                    "properties": {
-                        "readOnly": {
-                            "type": [
-                                "boolean",
-                                "null"
-                            ]
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    }
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "fileSize": {
                     "type": [
@@ -972,21 +888,10 @@
                     ]
                 },
                 "filePath": {
-                    "type": "object",
-                    "properties": {
-                        "readOnly": {
-                            "type": [
-                                "boolean",
-                                "null"
-                            ]
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    }
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "md5": {
                     "type": [
@@ -1007,21 +912,10 @@
                     ]
                 },
                 "incidentStatusDescription": {
-                    "type": "object",
-                    "properties": {
-                        "readOnly": {
-                            "type": [
-                                "boolean",
-                                "null"
-                            ]
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    }
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "externalTicketId": {
                     "type": [
@@ -1049,7 +943,7 @@
                 },
                 "rebootRequired": {
                     "type": [
-                        "string",
+                        "boolean",
                         "null"
                     ]
                 },
@@ -1073,7 +967,7 @@
                 },
                 "pendingActions": {
                     "type": [
-                        "string",
+                        "boolean",
                         "null"
                     ]
                 },

@@ -1,10 +1,10 @@
 # See [Source Acceptance Tests](https://docs.airbyte.com/connector-development/testing-connectors/source-acceptance-tests-reference)
 # for more information about how to configure these tests
-connector_image: airbyte/source-sentinel-one:dev
+connector_image: airbyte/source-sentinel-one:latest
 acceptance_tests:
   spec:
     tests:
-      - spec_path: "source_sentinel_one/spec.yaml"
+      - spec_path: "source_sentinel_one/spec.json"
   connection:
     tests:
       - config_path: "secrets/config.json"

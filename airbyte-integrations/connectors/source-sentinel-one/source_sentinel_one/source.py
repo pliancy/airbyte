@@ -18,7 +18,6 @@ from airbyte_cdk.sources.streams.http.auth import TokenAuthenticator
 # Basic full refresh stream
 class SentinelOneStream(HttpStream, ABC):
     LIMIT = 100
-    # TODO: Fill in the url base. Required.
     url_base = "https:"
 
     def __init__(self, api_token: str, your_management_url :str, **kwargs):
@@ -45,6 +44,7 @@ class SentinelOneStream(HttpStream, ABC):
     ) -> MutableMapping[str, Any]:
 
         params = {"limit": self.LIMIT}
+        
         if next_page_token:
             params.update({"cursor": f'{next_page_token}'})
         return params
@@ -273,14 +273,14 @@ class Report_tasks(SentinelOneStream):
 #         url = self.your_management_url
 #         return f'{url}/web/api/v2.1/rogues/settings'
 
-class Rogue_table(SentinelOneStream):
-    primary_key = None
+# class Rogue_table(SentinelOneStream):
+#     primary_key = None
 
-    def path(
-        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
-    ) -> str:
-        url = self.your_management_url
-        return f'{url}/web/api/v2.1/rogues/table-view'
+#     def path(
+#         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+#     ) -> str:
+#         url = self.your_management_url
+#         return f'{url}/web/api/v2.1/rogues/table-view'
 
 class Service_users(SentinelOneStream):
     primary_key = None
@@ -298,17 +298,17 @@ class Service_users(SentinelOneStream):
 #         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
 #     ) -> str:
 #         url = self.your_management_url
-#         return f'{url}/web/api/v2.1/sites'
+#         yield f'{url}/web/api/v2.1/sites'
 
 
-class Threat_intelligence(SentinelOneStream):
-    primary_key = None
+# class Threat_intelligence(SentinelOneStream):
+#     primary_key = None
 
-    def path(
-        self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
-    ) -> str:
-        url = self.your_management_url
-        return f'{url}/web/api/v2.1/threat-intelligence/iocs'
+#     def path(
+#         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
+#     ) -> str:
+#         url = self.your_management_url
+#         return f'{url}/web/api/v2.1/threat-intelligence/iocs'
 
 class Threats(SentinelOneStream):
     primary_key = None
@@ -332,8 +332,9 @@ class Users(SentinelOneStream):
 class SourceSentinelOne(AbstractSource):
     def check_connection(self, logger, config) -> Tuple[bool, any]:
         api_token = config["api_token"]
+        your_management_url = config["your_management_url"]
         headers = {"Authorization": f"ApiToken {api_token}", "Content-Type": "application/json", "Accept": "application/json"}
-        url = "https://usea1-300-nfr.sentinelone.net/web/api/v2.1/activities"
+        url = f"https:{your_management_url}/web/api/v2.1/activities"
 
         try:
             session = requests.get(url, headers=headers)
@@ -366,10 +367,7 @@ class SourceSentinelOne(AbstractSource):
                 Rbac_roles(**args),
                 Reports(**args),
                 Report_tasks(**args),
-                Rogue_table(**args),
                 Service_users(**args),
-                Threat_intelligence(**args),
                 Threats(**args),
                 Users(**args)
-                ]
-        
+                ]   

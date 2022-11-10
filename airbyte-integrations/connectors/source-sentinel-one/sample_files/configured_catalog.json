@@ -462,75 +462,6 @@
     },
     {
       "stream": {
-        "name": "rogue_table",
-        "json_schema": {
-          "$schema": "http://json-schema.org/draft-04/schema#",
-          "type": "object",
-          "properties": {
-            "token": {
-              "type": "string"
-            }
-          }
-        },
-        "supported_sync_modes": [
-          "full_refresh"
-        ],
-        "supported_destination_sync_modes": [
-          "overwrite",
-          "append"
-        ]
-      },
-      "sync_mode": "full_refresh",
-      "destination_sync_mode": "append"
-    },
-    {
-      "stream": {
-        "name": "service_users",
-        "json_schema": {
-          "$schema": "http://json-schema.org/draft-04/schema#",
-          "type": "object",
-          "properties": {
-            "token": {
-              "type": "string"
-            }
-          }
-        },
-        "supported_sync_modes": [
-          "full_refresh"
-        ],
-        "supported_destination_sync_modes": [
-          "overwrite",
-          "append"
-        ]
-      },
-      "sync_mode": "full_refresh",
-      "destination_sync_mode": "append"
-    },
-    {
-      "stream": {
-        "name": "threat_intelligence",
-        "json_schema": {
-          "$schema": "http://json-schema.org/draft-04/schema#",
-          "type": "object",
-          "properties": {
-            "token": {
-              "type": "string"
-            }
-          }
-        },
-        "supported_sync_modes": [
-          "full_refresh"
-        ],
-        "supported_destination_sync_modes": [
-          "overwrite",
-          "append"
-        ]
-      },
-      "sync_mode": "full_refresh",
-      "destination_sync_mode": "append"
-    },
-    {
-      "stream": {
         "name": "threats",
         "json_schema": {
           "$schema": "http://json-schema.org/draft-04/schema#",
@@ -555,6 +486,29 @@
     {
       "stream": {
         "name": "users",
+        "json_schema": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string"
+            }
+          }
+        },
+        "supported_sync_modes": [
+          "full_refresh"
+        ],
+        "supported_destination_sync_modes": [
+          "overwrite",
+          "append"
+        ]
+      },
+      "sync_mode": "full_refresh",
+      "destination_sync_mode": "append"
+    },
+    {
+      "stream": {
+        "name": "threats",
         "json_schema": {
           "$schema": "http://json-schema.org/draft-04/schema#",
           "type": "object",

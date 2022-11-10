@@ -138,9 +138,35 @@
                             },
                             "totalSurfaces": {
                                 "type": [
-                                    "string",
+                                    "integer",
                                     "null"
                                 ]
+                            },
+                            "surfaces": {
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
+                                "items": {
+                                    "type": [
+                                        "object",
+                                        "null"
+                                    ],
+                                    "properties": {
+                                        "count": {
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "name": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

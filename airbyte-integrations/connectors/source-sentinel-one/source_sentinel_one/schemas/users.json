@@ -123,7 +123,10 @@
             ]
         },
         "apiToken": {
-            "type": "object",
+            "type": [
+                "object",
+                "null"
+            ],
             "properties": {
                 "expiresAt": {
                     "type": [
@@ -157,7 +160,10 @@
                 "null"
             ],
             "items": {
-                "type": "object",
+                "type": [
+                    "object",
+                    "null"
+                ],
                 "properties": {
                     "readOnly": {
                         "type": [
@@ -174,7 +180,10 @@
                 "null"
             ],
             "items": {
-                "type": "object",
+                "type": [
+                    "object",
+                    "null"
+                ],
                 "properties": {
                     "roleId": {
                         "type": [
@@ -212,15 +221,10 @@
                             "null"
                         ],
                         "items": {
-                            "type": "object",
-                            "properties": {
-                                "type": {
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            }
+                            "type": [
+                                "string",
+                                "null"
+                            ]
                         }
                     }
                 }
@@ -268,18 +272,7 @@
                         "type": [
                             "array",
                             "null"
-                        ],
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "type": {
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            }
-                        }
+                        ]
                     }
                 }
             }
